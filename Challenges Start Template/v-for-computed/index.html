@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Challenge 2</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="app" class="flex flex-wrap justify-center mt-4 w-full">
+      <!--Form-->
+      <form class="flex flex-wrap w-3/5 bg-gray-600 p-4 rounded-lg">
+        <div class="w-1/2 p-1">
+          <input
+            class="w-full border border-gray-200 rounded-sm"
+            placeholder="Titulo"
+            required
+          />
+        </div>
+        <div class="w-1/2 p-1">
+          <input
+            class="w-full border border-gray-200 rounded-sm"
+            placeholder="Author"
+            required
+          />
+        </div>
+        <div class="w-full p-1 mt-1">
+          <select required class="w-full border border-gray-200 rounded-sm">
+            <option disabled value="">Seleccione una tematica</option>
+          </select>
+        </div>
+        <div class="w-full p-1 mt-1">
+          <button
+            class="w-full mt-1 p-2 rounded-lg border border-gray-800 bg-gray-700 text-white"
+          >
+            Submit Form
+          </button>
+        </div>
+      </form>
+      <div class="w-3/5 mt-4">
+        <select required class="w-full border border-gray-600 rounded-sm">
+          <option value="">Sin Filtro</option>
+        </select>
+      </div>
+      <!--Lista de Libros-->
+      <div class="w-3/5 mt-6 flex flex-row bg-orange-200 rounded-lg">
+        <div class="w-1/2 flex-col p-4">
+          <p class="font-bold text-gray-900">Titulo</p>
+          <p class="font-light text-gray-900">Autor</p>
+        </div>
+        <div class="py-6">
+          <p class="rounded-full bg-indigo-600 text-white px-3 py-1">
+            Temática
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./index.js"></script>
+</html>
